@@ -8,7 +8,7 @@ import ApplicationFilling from '../../pageobjects/applicationFilling';
 import Documents from '../../pageobjects/DocumentsPage';
 
 test('fillApplication',async({page})=>{
-
+      
        const Login = new InternalUserLoginPage(page)
          await Login.goto("https://fc-dev.finwyze.com")
          await Login.validLogin("fc.app.rm01@fintuple.com","Icici@456")
